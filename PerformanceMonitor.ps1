@@ -99,7 +99,3 @@ $Counter = @"
         #Discover the Available Counter on the Azure Performance Counter
 Get-Counter -ListSet * | Select-Object CounterSetName, Paths | Sort-Object CounterSetName
 
-
-Premium P30 (Twice) 1023GB
-
-Get-AzureVM –ServiceName $serviceName –Name $vmName |Add-AzureEndpoint –Name "Remote Desktop" –Protocol tcp –Localport 3389 -PublicPort 50100 |Update-AzureVM
